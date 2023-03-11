@@ -179,7 +179,7 @@ body {
     width: 100%; }
     .header-logo img.-mb {
       display: none; }
-  .header-logo.-air {
+  .header-logo.-air, .header-logo.-star {
     display: none; }
 
 .header.-fixed {
@@ -223,6 +223,9 @@ body {
     .header-logo img.-mb {
       display: block; }
     .header-logo.-air {
+      display: block;
+      width: 70.5vw; }
+    .header-logo.-star {
       display: block;
       width: 72.7vw; }
   .header.-fixed {
@@ -330,16 +333,32 @@ body {
       padding: 4.8% 4% 2%;
       font-size: 5.46vw; } }
 
+@-webkit-keyframes zoom {
+  0% {
+    transform: scale(1.15); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes zoom {
+  0% {
+    transform: scale(1.15); }
+  100% {
+    transform: scale(1); } }
+
 .banner {
   position: relative; }
   .banner-bg {
-    height: 44.375vw; }
+    height: 44.375vw;
+    overflow: hidden; }
   .banner-pic {
     width: 100%;
     height: 100%;
     background: no-repeat center/cover; }
     .banner-pic.-mb {
       display: none; }
+    .swiper-slide-active .banner-pic {
+      -webkit-animation: zoom 5s;
+              animation: zoom 5s; }
   .banner-wrap {
     position: absolute;
     top: 0;
