@@ -1,0 +1,14 @@
+{
+    "name": "紐西蘭航空",
+    "short_name": "紐西蘭航空",
+    "icons": [
+        {
+            "src": "assets/images/touch/logo.png",
+            "type": "image/png",
+            "sizes": "180x180"
+        }
+    ],
+    "start_url": "/?utm_source=homescreen",
+    "background_color": "#fafafa",
+    "theme_color": "#fafafa"
+}
