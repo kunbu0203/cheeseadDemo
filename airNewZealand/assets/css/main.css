@@ -785,9 +785,11 @@ body {
   .card-pic {
     border-radius: 50px 50px 0 0;
     overflow: hidden; }
-    .card-pic img {
+    .card-pic div {
       width: 100%;
-      transition: transform .3s; }
+      padding-bottom: 86.67%;
+      background: no-repeat center/100%;
+      transition: .3s; }
   .card-title {
     padding-bottom: 2px;
     font-size: 2vw;
@@ -798,6 +800,8 @@ body {
     background-color: #000; }
     .card-title span {
       font-size: 1.04vw; }
+    .card-title.-long {
+      letter-spacing: 1px; }
   .card-desc {
     flex: 1 0 auto;
     padding: 2.5% 4% 15%;
@@ -826,8 +830,8 @@ body {
         font-size: 3.23vw;
         line-height: 1;
         color: #25813a; }
-  .card:hover .card-pic img {
-    transform: scale(1.1); }
+  .card:hover .card-pic div {
+    background-size: 110%; }
   @media only screen and (max-width: 1279px) {
     .card {
       border-radius: 35px; }
@@ -839,12 +843,14 @@ body {
     .card-title {
       font-size: 2.2vw;
       letter-spacing: 0; }
+      .card-title.-long {
+        letter-spacing: 0; }
     .card-desc {
       font-size: 1.9vw; }
       .card-desc br {
         display: none; }
-    .touchevents .card:hover .card-pic img {
-      transform: none; } }
+    .touchevents .card:hover .card-pic div {
+      background-size: 100%; } }
   @media only screen and (max-width: 767px) {
     .card-title {
       font-size: 5.3vw; }
