@@ -13,9 +13,9 @@ $(function () {
     if (Modernizr.mq('(max-width: 767px)')) {
       floatTop = '80vw';
     } else if (Modernizr.mq('(max-width: 1023px)')) {
-      floatTop = '40vw';
+      floatTop = '45vw';
     } else {
-      floatTop = '26.5vw';
+      floatTop = '32vw';
     }
 
     $('[data-float]').css('top', "calc(".concat(scrollT, "px + ").concat(floatTop, ")"));
