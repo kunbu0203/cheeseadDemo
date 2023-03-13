@@ -8,6 +8,17 @@ $(function () {
         $(el).attr('data-animate-active', true);
       }
     });
+    var floatTop;
+
+    if (Modernizr.mq('(max-width: 767px)')) {
+      floatTop = '80vw';
+    } else if (Modernizr.mq('(max-width: 1023px)')) {
+      floatTop = '40vw';
+    } else {
+      floatTop = '26.5vw';
+    }
+
+    $('[data-float]').css('top', "calc(".concat(scrollT, "px + ").concat(floatTop, ")"));
   }).trigger('scroll'); // 選單
 
   $('[data-burger]').on('click', function (e) {
@@ -39,7 +50,6 @@ $(function () {
   $('[data-anchor-btn]').on('click', function (e) {
     e.preventDefault();
     var navHeight = Modernizr.mq('(max-width: 767px)') ? 0 : $('[data-anchor]').outerHeight();
-    console.log(navHeight);
     $('html, body').animate({
       scrollTop: $('[data-anchor-block="' + $(this).data('anchor-btn') + '"]').offset().top - navHeight
     }, 300);

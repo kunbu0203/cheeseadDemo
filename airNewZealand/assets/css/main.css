@@ -157,6 +157,9 @@ html,
 body {
   height: 100%; }
 
+body {
+  position: relative; }
+
 .container {
   min-height: 100%;
   overflow: hidden; }
@@ -299,8 +302,7 @@ body {
 
 /* ------------------------------- Floating tool ------------------------------- */
 .floatBtn {
-  position: fixed;
-  top: 26.5vw;
+  position: absolute;
   right: 3.5vw;
   box-sizing: border-box;
   display: block;
@@ -317,17 +319,14 @@ body {
   box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.3);
   background: url(../images/bg/btn.svg) no-repeat center/contain;
   z-index: 50;
-  transition: transform .3s; }
+  transition: transform .3s, top .8s; }
   .floatBtn:hover {
     transform: scale(1.1); }
   @media only screen and (max-width: 1023px) {
-    .floatBtn {
-      top: 40vw; }
-      .touchevents .floatBtn:hover {
-        transform: none; } }
+    .touchevents .floatBtn:hover {
+      transform: none; } }
   @media only screen and (max-width: 767px) {
     .floatBtn {
-      top: 80vw;
       width: 21.68vw;
       height: 21.68vw;
       padding: 4.8% 4% 2%;
@@ -511,6 +510,9 @@ body {
   margin-top: 0;
   background: url(../images/icon/arrow.svg) no-repeat center/contain;
   transition: transform .3s; }
+  .swiper-button-prev:focus,
+  .swiper-button-next:focus {
+    outline: none; }
   @media only screen and (max-width: 767px) {
     .swiper-button-prev,
     .swiper-button-next {
