@@ -46,3 +46,13 @@ AOS.init({
   duration: 800,
   once: true
 });
+$('[data-popup-open]').on('click', function (e) {
+  e.preventDefault();
+  $('[data-popup="' + $(this).data('popup-open') + '"]').addClass('-open');
+  $('body').addClass('-popupOpen');
+});
+$('[data-popup-close]').on('click', function (e) {
+  e.preventDefault();
+  $('[data-popup]').removeClass('-open');
+  $('body').removeClass('-popupOpen');
+});
