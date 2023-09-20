@@ -1331,6 +1331,10 @@ body {
     flex: 1;
     margin-top: 0.46875vw; }
 
+.airline-btn {
+  margin-top: 2.60417vw;
+  text-align: center; }
+
 @media only screen and (max-width: 1023px) {
   .airline-title {
     margin-bottom: 12.88245vw; }
@@ -1384,7 +1388,9 @@ body {
     .airline-item span {
       flex: 0 0 auto;
       width: 100%;
-      margin-top: 0.72464vw; } }
+      margin-top: 0.72464vw; }
+  .airline-btn {
+    margin-top: 6.44122vw; } }
 
 .japan {
   margin-top: 7.29167vw;
