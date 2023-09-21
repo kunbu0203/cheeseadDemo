@@ -1431,7 +1431,7 @@ body {
       top: 34.375vw;
       left: 13.02083vw; }
     .japan-item:nth-child(4) {
-      bottom: 0;
+      top: 47.91667vw;
       left: 6.45833vw; }
   @media only screen and (max-width: 1023px) {
     .japan {
@@ -1462,7 +1462,7 @@ body {
           top: 136.87601vw;
           left: 19.72625vw; }
         .japan-item:nth-child(4) {
-          bottom: -26.57005vw;
+          top: 193.23671vw;
           left: 10.46699vw; } }
 
 ol {
